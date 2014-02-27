@@ -1,0 +1,19 @@
+<div style="border-bottom:1px solid black;">
+
+	<div id="job_list" style="display:inline-block; padding:2px; vertical-align:top;">
+		<input type="checkbox" style="margin-left:35px; margin-right:35px;"<%- active ? 'checked' : '' %>>
+		<span id="job" style="cursor:pointer;"><%- title ? title : 'UNKOWN' %></span>
+		<button id="delete"><b>X</b></button>
+	</div>
+
+	<div id="details" style="display:inline-block; margin-left:20px; padding:2px; border-left:1px solid black">
+		<label>Title:</label>
+		<input id="new_title" class="detail_field" type="text" placeholder="<%- title %>"><br/>
+		<label>Description:</label>
+		<input id="new_description" class="detail_field" type="text", placeholder="<%- description %>"><br/>
+		<label>Contract:</label>
+		<input id="new_contract" class="detail_field" type="text" placeholder="<%- contract %>"><br/>
+		<button id="save">Save changes</button>
+	</div>
+	
+</div>
