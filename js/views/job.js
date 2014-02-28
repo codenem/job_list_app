@@ -73,10 +73,8 @@ define([
 		changeActive: function(){
 			if (this.model.get('active')){
 				this.model.set({ active: false });
-				//Filter.value = 'active';
 			} else {
 				this.model.set({ active: true });
-				//Filter.value = 'inactive'
 			}
 			this.model.save();
 		},
