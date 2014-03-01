@@ -71,11 +71,8 @@ define([
 
 		// Toggle active value between false and true
 		changeActive: function(){
-			if (this.model.get('active')){
-				this.model.set({ active: false });
-			} else {
-				this.model.set({ active: true });
-			}
+			this.model.get('active') ?
+				this.model.set({ active: false }) : this.model.set({ active: true });
 			this.model.save();
 		},
 
