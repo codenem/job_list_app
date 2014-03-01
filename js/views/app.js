@@ -17,7 +17,7 @@ define([
 		},
 
 		initialize: function(){
-			_.bindAll(this, 'render', 'addJob', 'appendJob');
+			_.bindAll(this, 'render', 'appendJob', 'filterOne', 'filter');
 			// Bind appendJob callback to collection 'add' event
 			this.listenTo(JobCollection, 'add', this.appendJob);
 			// Bind filterOne callback to collection models change on active property

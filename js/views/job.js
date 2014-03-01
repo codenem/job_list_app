@@ -24,7 +24,7 @@ define([
 		},
 
 		initialize: function(){
-			_.bindAll(this, 'render', 'displayDetails', 'changeDetails', 'setVisibility');
+			_.bindAll(this, 'render', 'setVisibility', 'alertError', 'clear', 'unrender');
 			// Binds render to 'change' event 
 			// Occurs when changeDetails is called (on model setting)
 			this.listenTo(this.model, 'change', this.render);
