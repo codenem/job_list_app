@@ -1,9 +1,0 @@
-Requirements:  node.js (to install bower)
-
-Installation: 
-	Just cd to the root folder and execute 'bower install'
-
-	Open index.html with Chrome (I didn't test on FF nor IE).
-
-Note that you must launch Chrome with the –allow-file-acces-from-files flag enabled for it to work locally (and all other instances of Chrome closed). For more details:
-http://www.chrome-allow-file-access-from-file.com/
