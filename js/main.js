@@ -10,7 +10,7 @@ require.config({
 		backbone: {
 			deps: ['underscore', 'jquery'],
 			exports: 'Backbone'
-		} 
+		}
 	},
 
 	paths : {
@@ -20,7 +20,7 @@ require.config({
 		'backbone.localStorage': 'libs/backbone.localStorage/backbone.localStorage',
 		text: 'libs/requirejs-text/text'
 	}
-})
+});
 
 require([
 	'jquery',
