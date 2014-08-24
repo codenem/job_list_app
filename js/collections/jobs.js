@@ -1,7 +1,7 @@
 define([
 	'models/job',
 	'backbone.localStorage'
-], function(JobModel){
+], function (JobModel) {
 
 	var JobCollection = Backbone.Collection.extend({
 		localStorage: new Backbone.LocalStorage('collections/jobs'),

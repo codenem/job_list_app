@@ -1,21 +1,23 @@
 define([
-	'backbone'
-], function(Backbone){
+    'backbone'
+], function (Backbone) {
 
-	var JobModel = Backbone.Model.extend({
-		// When creating a job entry, default for active is true
-		defaults: {
-			active: true,
-			title: '',
-			description: '',
-			contract: ''
-		},
+    var JobModel = Backbone.Model.extend({
+        // When creating a job entry, default for active is true
+        defaults: {
+            active: true,
+            title: '',
+            description: '',
+            contract: ''
+        },
 
-		// Title is mandatory
-		validate: function( attributes ){
-			if (attributes.title == '') return "Title is mandatory!";
-		}
-	});
+        // Title is mandatory
+        validate: function (attributes) {
+            if (attributes.title === '') {
+                return "Title is mandatory!";
+            }
+        }
+    });
 
-	return JobModel;
+    return JobModel;
 });
